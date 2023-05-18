@@ -1,0 +1,26 @@
+.calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: black;
+    height: 100vh; 
+}
+
+.borderContainer{
+    border: 5px solid #52cfc2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 5);
+}
+  
+.numberContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center; 
+    align-items: center;
+  }
+
+  
+  
