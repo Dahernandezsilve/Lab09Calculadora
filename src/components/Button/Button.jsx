@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { buttonForm } from './Button.module.css'
 
 const Button = ({
-  character, borderRadius, width, height, color, fontSize, backgroundColor,
+  character, borderRadius, width, height, color, fontSize, backgroundColor, handleButtonClick,
 }) => (
   <button
     className={buttonForm}
@@ -16,6 +16,7 @@ const Button = ({
       fontSize,
       backgroundColor,
     }}
+    onClick={() => handleButtonClick(character)}
     type="button"
   >
     {character}
@@ -31,6 +32,7 @@ Button.propTypes = {
   height: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   fontSize: PropTypes.string.isRequired,
+  handleButtonClick: PropTypes.func.isRequired,
 }
 
 export default Button

@@ -11,6 +11,7 @@ export default {
     height: { control: 'text' },
     color: { control: 'color' },
     fontSize: { control: 'text' },
+    onClick: { action: 'click' },
   },
 }
 
